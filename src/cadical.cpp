@@ -850,8 +850,8 @@ int App::main(int argc, char **argv) {
       print_witness(write_result_file);
   } else if (res == 20)
     fputs("s UNSATISFIABLE\n", write_result_file);
-  else
-    fputs("c UNKNOWN\n", write_result_file);
+  // else
+  //   fputs("c UNKNOWN\n", write_result_file);
   fflush(write_result_file);
   if (write_result_path)
     fclose(write_result_file);

@@ -379,8 +379,8 @@ void Internal::add_new_original_clause() {
           MSG("found falsified original clause");
         unsat = true;
       }
-    } else if (size == 1) {
-      assign_original_unit(clause[0]);
+      // } else if (size == 1) {
+      //   assign_original_unit(clause[0]);
     } else {
       Clause *c = new_clause(false);
       watch_clause(c);

@@ -14,6 +14,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include <iostream>
 
 // Less common 'C' header.
 
@@ -1037,6 +1038,7 @@ struct Internal {
   int local_search();
   int lucky_phases();
   int cdcl_loop_with_inprocessing();
+  int dpll_loop_with_inprocessing();
   void reset_solving();
   int solve(bool preprocess_only = false);
 
